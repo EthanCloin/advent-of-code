@@ -1,6 +1,6 @@
 
 def heaviest_elf():
-    with open('/Users/ethancloin/Developer/advent-of-code/day01/input.txt', 'r') as f:
+    with open('day01/input.txt', 'r') as f:
         elf_calories = cur_max = 0
         for line in f.readlines():
             if line == '\n':
@@ -17,7 +17,7 @@ def top_three_heaviest_elves():
     # third <= second <= first
     first = second = third = 0
 
-    with open('/Users/ethancloin/Developer/advent-of-code/day01/input.txt', 'r') as f:
+    with open('day01/input.txt', 'r') as f:
         elf_calories = 0
         for line in f.readlines():
             if line == '\n':
@@ -46,6 +46,6 @@ def top_three_heaviest_elves():
         print(f"1st: {first} -- 2nd: {second} -- 3rd: {third}")
         return first + second + third
 
-print(top_three_heaviest_elves())
+print(top_three_heaviest_elves(), heaviest_elf())
 
 
